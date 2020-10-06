@@ -9,7 +9,7 @@ public class MostrarAnos{
 		int years, months, days, totalDays;
 		Scanner read = new Scanner(System.in);
 
-		System.out.print("Digite sua idade em dias:");
+		System.out.print("Digite sua idade em dias: ");
 		totalDays = read.nextInt();
 
 		years = totalDays / 365;

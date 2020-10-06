@@ -9,13 +9,13 @@ public class Tempo{
 		int hours, minutes, seconds, totalSeconds;
 		Scanner read = new Scanner(System.in);
 		
-		System.out.print("Digite tempo de evento: ");
+		System.out.print("Digite tempo do evento: ");
 		totalSeconds = read.nextInt();
 		
 		hours = totalSeconds / 3600;
 		minutes = (totalSeconds % 3600) / 60;
 		seconds = (totalSeconds % 3600) % 60;
 
-		System.out.print("O evento dura: " + hours + ":" + minutes + ":" + seconds + ".");
+		System.out.print("Evento dura: " + hours + ":" + minutes + ":" + seconds);
 	}
 }

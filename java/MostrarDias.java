@@ -9,12 +9,12 @@ public class MostrarDias{
 		int years, months, days, totalDays;
 		Scanner read = new Scanner(System.in);
 
-		System.out.print("Digite sua idade em ano, meses e dias.");
-		System.out.print("Anos:");
+		System.out.println("Digite sua idade em ano, meses e dias.");
+		System.out.print("Anos: ");
 		years = read.nextInt();
-		System.out.print("meses:");
+		System.out.print("meses: ");
 		months = read.nextInt();
-		System.out.print("dias:");
+		System.out.print("dias: ");
 		days = read.nextInt();
 						
 		totalDays = (years * 365) + (months * 30) + days;
