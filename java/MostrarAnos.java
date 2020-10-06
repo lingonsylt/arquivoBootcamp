@@ -16,8 +16,7 @@ public class MostrarAnos{
 		months = (totalDays % 365) / 30;
 		days = (totalDays % 365) % 30;
 
-		System.out.print("Sua idade é de " + years + " anos, ");
-		System.out.print(months + " meses e " + days + " dias.");
+		System.out.print("Sua idade é de " + years + " anos, " + " meses e " + days + " dias.");
 	}
 
 }
