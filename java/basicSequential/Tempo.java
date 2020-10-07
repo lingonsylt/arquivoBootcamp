@@ -7,10 +7,10 @@ public class Tempo{
 	public static void main (String args[])
 	{
 		int hours, minutes, seconds, totalSeconds;
-		Scanner read = new Scanner(System.in);
+		Scanner get = new Scanner(System.in);
 		
 		System.out.print("Digite tempo do evento: ");
-		totalSeconds = read.nextInt();
+		totalSeconds = get.nextInt();
 		
 		hours = totalSeconds / 3600;
 		minutes = (totalSeconds % 3600) / 60;
