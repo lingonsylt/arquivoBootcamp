@@ -14,7 +14,6 @@ public class CustoCarro{
 		System.out.println("Qual custo de fábrica");
 		mkCost = read.nextFloat();
 
-		// retorna valor
 		price = price + (mkCost / 100) * 28;
 		price = price + (mkCost / 100) * 45;
 		price = price + mkCost;
