@@ -7,19 +7,18 @@ public class MostrarDias{
 	public static void main (String args[])
 	{
 		int years, months, days, totalDays;
-		Scanner read = new Scanner(System.in);
+		Scanner get = new Scanner(System.in);
 
-		System.out.println("Digite sua idade em ano, meses e dias.");
 		System.out.print("Anos: ");
-		years = read.nextInt();
+		years = get.nextInt();
 		System.out.print("meses: ");
-		months = read.nextInt();
+		months = get.nextInt();
 		System.out.print("dias: ");
-		days = read.nextInt();
+		days = get.nextInt();
 						
-		totalDays = (years * 365) + (months * 30) + days;
+		totalDays = years * 365 + months * 30 + days;
 
-		System.out.print("O total de dias que você viveu foi de: " + totalDays);
+		System.out.printf("Total de dias: %d.\n", totalDays);
 	}
 
 }

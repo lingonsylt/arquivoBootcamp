@@ -9,15 +9,15 @@ public class CustoCarro{
 	public static void main (String args[])
 	{
 		float mkCost, price = 0;
-		Scanner read = new Scanner(System.in);
+		Scanner get = new Scanner(System.in);
 		
-		System.out.println("Qual custo de fábrica");
-		mkCost = read.nextFloat();
+		System.out.print("Custo de fábrica: ");
+		mkCost = get.nextFloat();
 
-		price = price + (mkCost / 100) * 28;
-		price = price + (mkCost / 100) * 45;
-		price = price + mkCost;
+		price+= (mkCost / 100) * 28;
+		price+= (mkCost / 100) * 45;
+		price+= mkCost;
 
-		System.out.print("O valor do carro é de: R$" + price);
+		System.out.printf("O valor do carro é de: R$%f.\n", price);
 	}
 }

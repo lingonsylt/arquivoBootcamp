@@ -7,16 +7,16 @@ public class MostrarAnos{
 	public static void main (String args[])
 	{
 		int years, months, days, totalDays;
-		Scanner read = new Scanner(System.in);
+		Scanner get = new Scanner(System.in);
 
 		System.out.print("Digite sua idade em dias: ");
-		totalDays = read.nextInt();
+		totalDays = get.nextInt();
 
 		years = totalDays / 365;
 		months = (totalDays % 365) / 30;
 		days = (totalDays % 365) % 30;
 
-		System.out.print("Sua idade é de " + years + " anos, " + " meses e " + days + " dias.");
+		System.out.printf("Sua idade é de %d anos, %d meses e %d dias.\n", years, months, days);
 	}
 
 }

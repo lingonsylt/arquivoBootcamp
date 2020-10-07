@@ -16,6 +16,6 @@ public class Tempo{
 		minutes = (totalSeconds % 3600) / 60;
 		seconds = (totalSeconds % 3600) % 60;
 
-		System.out.print("Evento dura: " + hours + ":" + minutes + ":" + seconds);
+		System.out.printf("Evento dura: %d horas, %d minutos e %d segundos.\n", hours, minutes, seconds);
 	}
 }
