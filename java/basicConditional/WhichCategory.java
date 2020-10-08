@@ -1,6 +1,6 @@
 // Program reads one's age and returns their category.
 // 10-14 infant
-// 15-17 adolescent
+// 15-17 juvenile
 // 18-25 adult
 
 import java.util.Scanner;
