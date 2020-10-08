@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class askAge{
+public class AskAge{
 	public static void main (String args[])
 	{
 		int age = 0, under21 = 0;

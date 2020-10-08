@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class randomNumber01{
+public class RandomMultiples3{
 	public static void main (String args[])
 	{
 		int num, dividend = 0, divisor = 0;

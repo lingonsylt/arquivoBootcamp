@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class randomNumber00{
+public class RandomSum{
 	public static void main (String args[])
 	{
 		int num, sum = 0;
