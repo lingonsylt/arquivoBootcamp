@@ -12,7 +12,6 @@ public class askAge{
 		while(age != -99)
 		{
 			System.out.printf("Pessoas com menos de 21 anos: %d.\n", under21);
-
 			System.out.print("Digite sua idade: ");
 			age = get.nextInt();
 
@@ -29,6 +28,7 @@ public class askAge{
 
 	public static void clearScreen()
 	{
-	    System.out.flush();
+		System.out.print("\033[H\033[2J");
+		System.out.flush();
 	}
 }
