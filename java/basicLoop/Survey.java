@@ -1,4 +1,4 @@
-// Program reads input as a survey and returns vairous crossed datas
+// Program reads input as a survey and returns various crossed data
 // from a pool of 150 people.
 
 import java.util.Scanner;
