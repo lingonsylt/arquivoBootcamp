@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RandomMultiples3{
 	public static void main (String args[])
 	{
-		int num, dividend = 0, divisor = 0;
+		int i, dividend = 0, divisor = 0;
 		Scanner s = new Scanner(System.in);
 
 		do
@@ -14,9 +14,9 @@ public class RandomMultiples3{
 			num = s.nextInt();
 
 			
-			if(num % 3 == 0 && num != 0)
+			if(i % 3 == 0 && i != 0)
 			{
-				dividend+= num;
+				dividend+= i;
 				divisor++;
 			}
 		}
