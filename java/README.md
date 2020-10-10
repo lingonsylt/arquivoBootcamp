@@ -1,6 +1,6 @@
-Português logo abaixo.
+Português logo abaixo
 
-# Java directory
+# Java/
 
 Here I keep some java exercises.
 
