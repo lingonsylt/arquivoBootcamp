@@ -1,6 +1,6 @@
-Portugu�s logo abaixo
+Português logo abaixo
 
-# Java practice repository
+# Boot camp archives
 
 In this repository I keep various exercises and projects I developed during the [Generation Brazil](https://brazil.generation.org/)'s boot camp.
 
@@ -12,12 +12,12 @@ This is the repository folders structure to ease navigation. Inside each folder 
     │  ├─ basicSequential/
     │  ├─ basicConditional/
     │  ├─ basicLoop/
-    │  ├─ basicArray/
+    │  └─ basicArray/
     └─ README.md
 
 ---
 
-# Repositório de trenamento em java
+# Arquivos de boot camp
 
 Nesse repositório mantenho diversos exercícios e projeto que desenvolvi durante o boot camp da [Generation Brasil](https://brazil.generation.org/).
 
@@ -29,5 +29,5 @@ Para facilitar a navegaçãoo, essa é a estrutura de pastas do repositório. De
     │  ├─ basicSequential/
     │  ├─ basicConditional/
     │  ├─ basicLoop/
-    │  ├─ basicArray/
+    │  └─ basicArray/
     └─ README.md
