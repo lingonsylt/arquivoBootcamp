@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Survey{
+public class survey{
 	public static void main (String args[])
 	{
 		int age = 0, gender = 0, temper = 0, calmPerson = 0, angryWomen = 0, agressiveMen = 0, calmNonBinary = 0, angryOver40 = 0, calmUnder18 = 0, subjects = 1;

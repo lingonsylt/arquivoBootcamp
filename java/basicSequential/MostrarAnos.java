@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class MostrarAnos{
+public class mostrarAnos{
 	public static void main (String args[])
 	{
 		int years, months, days, totalDays;

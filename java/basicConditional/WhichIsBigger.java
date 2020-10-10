@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class  WhichIsBigger{
+public class  whichIsBigger{
 	public static void main (String args[])
 	{
 		int int1, int2, int3;

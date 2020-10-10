@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class CustoCarro{
+public class custoCarro{
 	public static void main (String args[])
 	{
 		float mkCost, price = 0;

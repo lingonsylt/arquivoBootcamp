@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class MostrarDias{
+public class mostrarDias{
 	public static void main (String args[])
 	{
 		int years, months, days, totalDays;

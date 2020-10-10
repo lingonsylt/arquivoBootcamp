@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Tempo{
+public class tempo{
 	public static void main (String args[])
 	{
 		int hours, minutes, seconds, totalSeconds;

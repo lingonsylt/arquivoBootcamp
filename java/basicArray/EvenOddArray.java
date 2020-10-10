@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EvenOddArray{
+public class evenOddArray{
 	public static void main (String args[])
 	{
 		int[] integers = new int[6];

@@ -1,4 +1,4 @@
-public class MultActionArray{
+public class multActionArray{
 	public static void main (String args[])
 	{
 		int container = 0;

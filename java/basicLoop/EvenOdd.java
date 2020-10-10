@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class EvenOdd{
+public class evenOdd{
 	public static void main (String arg[])
 	{
 		int num, even = 0, odd = 0;

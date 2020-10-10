@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class WhichCategory{
+public class whichCategory{
 	public static void main (String arg[])
 	{
 		int age;

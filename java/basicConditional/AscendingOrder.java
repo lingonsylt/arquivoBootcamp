@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class  AscendingOrder{
+public class  ascendingOrder{
 	public static void main (String args[])
 	{
 		int int1, int2, int3, first = 0, second = 0, third = 0;

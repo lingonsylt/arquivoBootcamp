@@ -3,7 +3,7 @@
 
 import java.lang.Thread;
 
-public class RemainderFive{
+public class remainderFive{
 	public static void main (String args[])
 	{
 		System.out.println("Números:");
