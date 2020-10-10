@@ -8,25 +8,26 @@ In this repository I keep various exercises and projects I developed during the 
 
 This is the repository folders structure to ease navigation. Inside each folder you'll find more information about it's content.
 
-    |- java/
-    |  |- basicSequential/
-    |  |- basicConditional/
-    |  |- basicLoop/
-    |  |- basicArray/
-    |-README.md
+    ├─ java/
+    │  ├─ basicSequential/
+    │  ├─ basicConditional/
+    │  ├─ basicLoop/
+    │  ├─ basicArray/
+    └─ README.md
 
+---
 
-# Reposit�rio de trenamento em java
+# Repositório de trenamento em java
 
-Nesse reposit�rio mantenho diversos exerc�cios e projeto que desenvolvi durante o boot camp da [Generation Brasil](https://brazil.generation.org/).
+Nesse repositório mantenho diversos exercícios e projeto que desenvolvi durante o boot camp da [Generation Brasil](https://brazil.generation.org/).
 
-## Sum�rio
+## Sumário
 
-Para facilitar a navega��oo, essa � a estrutura de pastas do reposit�rio. Dentro de cada pasta voc� encontra mais informa��es sobre os conte�dos.
+Para facilitar a navegaçãoo, essa é a estrutura de pastas do repositório. Dentro de cada pasta você encontra mais informações sobre os conteúdos.
 
-    |- java/
-    |  |- basicSequential/
-    |  |- basicConditional/
-    |  |- basicLoop/
-    |  |- basicArray/
-    |-README.md
+    ├─ java/
+    │  ├─ basicSequential/
+    │  ├─ basicConditional/
+    │  ├─ basicLoop/
+    │  ├─ basicArray/
+    └─ README.md
