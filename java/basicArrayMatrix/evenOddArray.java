@@ -1,5 +1,6 @@
 /*
- * Program reads 6 integers and then prints out: the even numbers and the  sum of them. The odd numbers and the sum of them.
+ * Program reads 6 integers and then prints out: the even numbers and
+ * the  sum of them. The odd numbers and the sum of them.
  */
 
 import java.util.Scanner;
