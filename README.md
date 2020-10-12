@@ -12,7 +12,7 @@ This is the repository folders structure to ease navigation. Inside each folder 
     │  ├─ basicSequential/
     │  ├─ basicConditional/
     │  ├─ basicLoop/
-    │  └─ basicArray/
+    │  └─ basicArrayMatrix/
     └─ README.md
 
 ---
@@ -29,5 +29,5 @@ Para facilitar a navegaçãoo, essa é a estrutura de pastas do repositório. De
     │  ├─ basicSequential/
     │  ├─ basicConditional/
     │  ├─ basicLoop/
-    │  └─ basicArray/
+    │  └─ basicArrayMatrix/
     └─ README.md
