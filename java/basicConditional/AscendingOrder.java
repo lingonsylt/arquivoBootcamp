@@ -1,6 +1,8 @@
-// Program reads three integers and returns them sorted from the smaller
-// to the bigger. NOTE: this is not the most efficient way, it severs 
-// practice purposes only.
+/*
+* Program reads three integers and returns them sorted from the smaller
+* to the bigger. NOTE: this is not the most efficient way, it severs 
+* practice purposes only.
+*/
 
 import java.util.Scanner;
 
