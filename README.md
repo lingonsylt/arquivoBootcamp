@@ -26,8 +26,8 @@ Nesse repositório mantenho diversos exercícios e projeto que desenvolvi durant
 Para facilitar a navegaçãoo, essa é a estrutura de pastas do repositório. Dentro de cada pasta você encontra mais informações sobre os conteúdos.
 
     ├─ java/
-    │  ├─ basicSequential/
-    │  ├─ basicConditional/
-    │  ├─ basicLoop/
-    │  └─ basicArrayMatrix/
+    │  ├─ basicSequential/          programção sequencial básica
+    │  ├─ basicConditional/         laços condicionais básicos
+    │  ├─ basicLoop/                laços de repetição básicos
+    │  └─ basicArrayMatrix/         vetores e matrizes básicos
     └─ README.md
