@@ -21,10 +21,9 @@ public class evenOddArray{
 			{
 				even+= integers[i];
 			}
-
-			if(integers[i] % 2 == 1)
+			else
 			{
-				odd+= integers[i];
+				odd++;
 			}
 		}
 		
@@ -36,7 +35,7 @@ public class evenOddArray{
 				System.out.printf("%d ", integers[i]);
 			}
 		}
-		System.out.printf("\nA soma dos número pares é: %d\n", even);
+		System.out.printf("\nA soma dos números pares é: %d\n", even);
 
 		System.out.print("Lista dos números ímpares:\n");
 		for(int i = 0; i < 6; i++)
@@ -46,7 +45,7 @@ public class evenOddArray{
 				System.out.printf("%d ", integers[i]);
 			}
 		}
-		System.out.printf("\nA soma dos número ímpares é: %d", odd);
+		System.out.printf("\nA quantidade de números ímpares é: %d", odd);
 
 	}
 }
