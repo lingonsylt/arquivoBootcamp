@@ -4,6 +4,8 @@ public class Sloth extends Animal{ // 130 * 10 ^-3 0,130:b
 		super(name, age);
 	}
 
+	// 15, 0,015
+	
 	@Override
 	public void MakeSound(String animalSound){
 		System.out.printf("Hello, I'm a sloth and this is my sound:\n%s\nSound good?\n", animalSound);
