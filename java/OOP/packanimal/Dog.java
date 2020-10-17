@@ -19,4 +19,12 @@ public class Dog extends Animal{
 
 		position = finalPosition;
 	}
+
+	public String getPosition(){
+		return position;
+	}
+
+	public void setPosition(String position){
+		this.position = position;
+	}
 }
