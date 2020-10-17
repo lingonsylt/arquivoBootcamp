@@ -1,4 +1,4 @@
-public class Sloth extends Animal{
+public class Sloth extends Animal{ // 130 * 10 ^-3 0,130:b
 	
 	public Sloth(String name, int age){
 		super(name, age);

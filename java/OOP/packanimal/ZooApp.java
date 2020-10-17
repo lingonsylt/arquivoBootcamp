@@ -17,6 +17,6 @@ public class ZooApp{
 		System.out.println();
 
 		sid.MakeSound("ICE AGE!");
-		sid.Climb(20,15);
+		sid.Climb(40,11);
 	}
 }

@@ -20,11 +20,11 @@ public class Horse extends Animal{
 		position = finalPosition;
 	}
 
-	public String getPosition(){
+	public float getPosition(){
 		return position;
 	}
 
-	public void setPosition(String position){
+	public void setPosition(float position){
 		this.position = position;
 	}
 }
