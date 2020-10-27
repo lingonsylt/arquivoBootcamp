@@ -2,8 +2,6 @@ CREATE DATABASE db_RH2;
 
 USE db_RH2;
 
-DROP TABLE tb_cargo;
-
 CREATE TABLE tb_cargo (
 	id INT AUTO_INCREMENT,
     nome_cargo VARCHAR (32) NOT NULL,
@@ -249,7 +247,7 @@ INSERT INTO tb_funcionario (
  WHERE salario > 2000;
  
  SELECT * FROM tb_funcionario
- WHERE salario < 2000;
+ WHERE salario > 1000 && salario < 2000;
  
 SELECT * FROM tb_funcionario
 WHERE nome_funcionario LIKE '%C%';

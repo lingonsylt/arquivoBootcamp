@@ -235,7 +235,7 @@ SELECT * FROM tb_produto
 WHERE em_estoque > 10;
 
 SELECT * FROM tb_produto
-WHERE em_estoque < 10;
+WHERE em_estoque > 10 && em_estoque < 20;
 
 SELECT * FROM tb_produto
 WHERE nome_produto LIKE '%C%';
