@@ -247,7 +247,7 @@ INSERT INTO tb_funcionario (
  WHERE salario > 2000;
  
  SELECT * FROM tb_funcionario
- WHERE salario > 1000 && salario < 2000;
+ WHERE salario > 1000 AND salario < 2000;
  
 SELECT * FROM tb_funcionario
 WHERE nome_funcionario LIKE '%C%';
