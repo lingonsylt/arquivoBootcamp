@@ -1,6 +1,6 @@
 /**
  * Program reads 6 integers and then prints out: the even numbers and
- * their sum, the odd numbers and their sum.
+ * the sum of them, the odd numbers and the sum of them.
  *
  * Author: Rafael Oliveira.
  *

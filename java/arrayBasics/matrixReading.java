@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class matrixReading{
+public class MatrixReading{
 	public static void main (String args[])
 	{
 		int over10 = 0;
