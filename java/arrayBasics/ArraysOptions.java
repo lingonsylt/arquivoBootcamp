@@ -31,7 +31,7 @@ public class ArraysOptions{
         for(int i = 0; i < 2; i++){
             for(int j = 0; j < 2; j++){
                 System.out.printf("Atribua um número para a posição %d,%d"+
-                        "da matriz 1: ", i, j);
+                                  "da matriz 1: ", i, j);
                 matrixOne[i][j] = s.nextInt();
             }
         }
