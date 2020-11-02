@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class EvenOddArray{
     public static void main (String[] args){
         int
-            odd = 0,
-                even = 0;
+        odd = 0,
+        even = 0;
         int[] integers = new int[6];
         Scanner s = new Scanner(System.in);
 
