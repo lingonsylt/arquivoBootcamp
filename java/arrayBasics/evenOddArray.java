@@ -1,6 +1,6 @@
 /**
  * Program reads 6 integers and then prints out: the even numbers and
- * the sum of them, the odd numbers and the sum of them.
+ * the sum of them, the odd numbers and how many of them are there.
  *
  * Author: Rafael Oliveira.
  *
@@ -21,11 +21,7 @@ public class EvenOddArray{
             System.out.print("Digite um número: ");
             integers[i] = s.nextInt();
 
-            if(integers[i] % 2 == 0){
-                even+= integers[i];
-            }else{
-                odd+= integers[i];
-            }
+            int checker = (integers[i] % 2 == 0) ? even+= integers[i] : odd++;
         }
 
         System.out.print("Lista dos números pares:\n");
