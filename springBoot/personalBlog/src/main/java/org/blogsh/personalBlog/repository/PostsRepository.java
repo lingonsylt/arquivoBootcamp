@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
 public interface PostsRepository extends JpaRepository<Posts, Integer>{
-	public List<Posts> findAllByContainingTitleIgnoringCase(String title);
+	public List<Posts> findAllByContainingPostTitleIgnoringCase(String title);
 	public List<Posts> findAllByContainingPostIgnoringCase(String post);
 }
