@@ -30,11 +30,11 @@ public class PostsController{
                orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/title/{title}")
+    @GetMapping("/titles/{postTitle}")
     public ResponseEntity<List<Posts>> getAllByTitulo(@PathVariable
                                                       String title){
         return ResponseEntity.ok(repository.
-               findAllByContainingTitleIgnoringCase(title));
+               findAllByContainingPostTitleIgnoringCase(postTitle));
     }
 
     @GetMapping("/posts/{post}")
