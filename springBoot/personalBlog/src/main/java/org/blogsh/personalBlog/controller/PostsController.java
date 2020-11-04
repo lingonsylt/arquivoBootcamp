@@ -32,7 +32,7 @@ public class PostsController{
 
     @GetMapping("/titles/{postTitle}")
     public ResponseEntity<List<Posts>> getAllByPostTitle(@PathVariable
-                                                      String title){
+                                                         String title){
         return ResponseEntity.ok(repository.
                findAllByContainingPostTitleIgnoringCase(postTitle));
     }
