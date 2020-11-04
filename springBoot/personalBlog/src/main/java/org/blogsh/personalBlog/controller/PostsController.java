@@ -1,7 +1,6 @@
 package org.blogsh.personalBlog.controller;
 
 import java.util.List;
-
 import org.blogsh.personalBlog.model.Posts;
 import org.springframework.http.ResponseEntity;
 import org.blogsh.personalBlog.repository.PostsRepository;
@@ -43,5 +42,4 @@ public class PostsController{
         return ResponseEntity.ok(repository.
                findAllByContainingPostIgnoringCase(post));
     }
-
 }
