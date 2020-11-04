@@ -27,13 +27,13 @@ public class PostsController{
 
     @GetMapping("/{id}")
     public ResponseEntity<Posts> findByIdPostagem(@PathVariable int id){
-        return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
-               .orElse(ResponseEntity.notFound().build());
+        return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).
+               orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/title/{title}")
-    public ResponseEntity<List<Posts>> getAllByTitulo(@PathVariable String
-                                                      title){
+    public ResponseEntity<List<Posts>> getAllByTitulo(@PathVariable
+                                                      String title){
         return ResponseEntity.ok(repository.
                findAllByContainingTitleIgnoringCase(title));
     }
