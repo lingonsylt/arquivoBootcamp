@@ -26,12 +26,15 @@ public class PostsController{
 
     @GetMapping("/{id}")
     public ResponseEntity<Posts> findByPostId(@PathVariable int id){
-        return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+        return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).
+               orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/titles/{postTitle}")
-    public ResponseEntity<List<Posts>> getAllByPostTitle(@PathVariable String postTitle){
-        return ResponseEntity.ok(repository.findAllByPostTitleIgnoringCase(postTitle));
+    public ResponseEntity<List<Posts>> getAllByPostTitle(@PathVariable String
+                                                                    postTitle){
+        return ResponseEntity.ok(repository.findAllByPostTitleIgnoringCase(
+                                                                   postTitle));
     }
 
     @GetMapping("/posts/{post}")
