@@ -20,7 +20,7 @@ public class Posts{
 	
 	@NotNull
 	@Size(min = 1, max = 100)
-	private String title;
+	private String postTitle;
 	
 	@NotNull
 	@Size(min = 1, max = 1000)
@@ -37,12 +37,12 @@ public class Posts{
 		this.id = id;
 	}
 
-	public String getTitle(){
-		return title;
+	public String getPostTitle(){
+		return postTitle;
 	}
 
-	public void setTitle(String title){
-		this.title = title;
+	public void setPostTitle(String postTitle){
+		this.postTitle = postTitle;
 	}
 
 	public String getPost(){
