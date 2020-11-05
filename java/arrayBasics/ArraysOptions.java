@@ -30,38 +30,43 @@ public class ArraysOptions{
 
         for(int i = 0; i < 2; i++){
             for(int j = 0; j < 2; j++){
-                System.out.printf("Atribua um nÃºmero para a posiÃ§Ã£o %d,%d"+
-                                  "da matriz 1: ", i, j);
+                System.out.printf("Atribua um número para a posição [%d],[%d]"+
+                                  " da matriz 1: ", i, j);
                 matrixOne[i][j] = s.nextInt();
             }
         }
 
         for(int i = 0; i < 2; i++){
             for(int j = 0; j < 2; j++){
-                System.out.printf("Atribua um nÃºmero para a posiÃ§Ã£o %d,%d"+
-                                  "da matriz 2: ", i, j);
+                System.out.printf("Atribua um número para a posição [%d],[%d]"+
+                                  " da matriz 2: ", i, j);
                 matrixTwo[i][j] = s.nextInt();
-            }
-
-            for(int j = 0; j < 2; j++){
-                matrixSum[i][j] = matrixOne[i][j] + matrixTwo[i][j];
-                matrixSub[i][j] = matrixTwo[i][j] - matrixOne[i][j];
             }
         }
 
         do{
-        System.out.println("\nEscolha uma opÃ§Ã£o:\n(1) Somar matrizes\n(2) Sub"+
+        System.out.println("\nEscolha uma opção:\n(1) Somar matrizes\n(2) Sub"+
                            "trair primeira matrix da segunda\n(3) Somar uma c"+
-                           "onstante Ã s matrizes\n(4) Mostrar matrizes\n(5) F"+
+                           "onstante às matrizes\n(4) Mostrar matrizes\n(5) F"+
                            "inalizar programa\n");
         option = s.nextInt();
 
             switch(option){
                 case 1:
+                    for(int i = 0; i < 2; i++){
+                        for(int j = 0; j < 2; j++){
+                            matrixSum[i][j]= matrixOne[i][j] + matrixTwo[i][j];
+                        }
+                    }
                     System.out.println(Arrays.deepToString(matrixSum));
                     break;
 
                 case 2:
+                    for(int i = 0; i < 2; i++){
+                        for(int j = 0; j < 2; j++){
+                            matrixSub[i][j]= matrixTwo[i][j] - matrixOne[i][j];
+                        }
+                    }
                     System.out.println(Arrays.deepToString(matrixSub));
                     break;
 
@@ -94,7 +99,7 @@ public class ArraysOptions{
                     break;
 
                 default:
-                    System.out.println("Escolha uma opÃ§Ã£o vÃ¡lida");
+                    System.out.println("Escolha uma opção válida.");
             }
         }while(option != -1);
     }
