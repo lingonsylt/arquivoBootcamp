@@ -1,5 +1,6 @@
 /**
- * Faça um programa que leia duas matrizes 2 x 2 com valores reais. Ofereça ao usuário um
+ * Faça um programa que leia duas matrizes 2 x 2 com valores reais. Ofereça 
+ * o usuário um
  * menu de opções:
  */
 
