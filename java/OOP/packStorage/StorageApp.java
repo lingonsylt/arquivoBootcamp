@@ -22,11 +22,11 @@ public class StorageApp{
         items.add(new String("corda"));
 
         do{
-            System.out.println("Digite 1 para adicionar dados à lista.\n"+
-                               "Digite 2 para remover dados da lista.\n"+
-                               "Digite 3 para atualizar dadoss dados da "+
-                               "lista.\nDigite 4 para apresentar dados "+
-                               "da lista.\nDigite 0 para finalizar.");
+            System.out.println("Digite 1 para adicionar dados à lista.\nDigit"+
+                               "e 2 para remover dados da lista.\nDigite 3 pa"+
+                               "ra atualizar dadoss dados da lista.\nDigite 4"+
+                               "4 para apresentar dados da lista\nDigite 0 pa"+
+                               "ra finalizar.");
             option = s.nextInt();
         
             switch(option){
