@@ -1,10 +1,12 @@
 package org.blogsh.personalBlog.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -19,15 +21,19 @@ public class Posts{
 	private int id;
 	
 	@NotNull
-	@Size(min = 1, max = 100)
+	@Size(min = 1, max = 255)
 	private String postTitle;
 	
 	@NotNull
-	@Size(min = 1, max = 1000)
+	@Size(min = 1, max = 1024)
 	private String post;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
+
+    @ManyToOne
+    @JsonIgnoreProperties("post")
+    private Themes theme;
 
 	public int getId(){
 		return id;
@@ -60,4 +66,12 @@ public class Posts{
 	public void setDate(Date date){
 		this.date = date;
 	}
+
+    public Themes getTheme(){
+        return theme;
+    }
+
+    public void setTheme(Themes theme){
+        this.theme = theme;
+    }
 }
