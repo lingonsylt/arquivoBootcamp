@@ -19,41 +19,37 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/themes")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public class ThemesController{
+public class ThemesController {
 	@Autowired
 	private ThemesRepository repository;
-	
+
 	@GetMapping
-	public ResponseEntity<List<Themes>> findAllThemes(){
+	public ResponseEntity<List<Themes>> findAllThemes() {
 		return ResponseEntity.ok(repository.findAll());
 	}
-	
+
 	@GetMapping("/{id}")
-	public ResponseEntity<Themes> findThemesById(@PathVariable int id){
-		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
-				.orElse(ResponseEntity.notFound().build());
+	public ResponseEntity<Themes> findThemesById(@PathVariable int id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
-	
+
 	@GetMapping("/description/{descripion}")
-	public ResponseEntity<List<Themes>> findByDescprition(@PathVariable
-                                                          String description){
-		return ResponseEntity.ok(repository.findAllByDescriptionContainingIgnoreCase(
-                                                                 description));
+	public ResponseEntity<List<Themes>> findByDescprition(@PathVariable String description) {
+		return ResponseEntity.ok(repository.findAllByDescriptionContainingIgnoreCase(description));
 	}
-	
+
 	@PostMapping
-	public ResponseEntity<Themes> postTheme(@RequestBody Themes theme){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(
-                                                                       theme));
+	public ResponseEntity<Themes> postTheme(@RequestBody Themes theme) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(theme));
 	}
-	
+
 	@PutMapping
-	public ResponseEntity<Themes> putTheme(@RequestBody Themes theme){
+	public ResponseEntity<Themes> putTheme(@RequestBody Themes theme) {
 		return ResponseEntity.ok(repository.save(theme));
 	}
-	
+
 	@DeleteMapping("/{id}")
-	public void deleteTheme(@PathVariable int id){
+	public void deleteTheme(@PathVariable int id) {
 		repository.deleteById(id);
 	}
 

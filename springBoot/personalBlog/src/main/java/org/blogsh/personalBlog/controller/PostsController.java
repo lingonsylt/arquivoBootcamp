@@ -19,47 +19,42 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/posts")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public class PostsController{
-    @Autowired
-    private PostsRepository repository;
+public class PostsController {
+	@Autowired
+	private PostsRepository repository;
 
-    @GetMapping
-    public ResponseEntity<List<Posts>> findAllPosts(){
-        return ResponseEntity.ok(repository.findAll());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Posts> findPostById(@PathVariable int id){
-        return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).
-               orElse(ResponseEntity.notFound().build());
-    }
-
-    @GetMapping("/titles/{postTitle}")
-    public ResponseEntity<List<Posts>> findAllPostByTitle(@PathVariable String
-                                                                    postTitle){
-        return ResponseEntity.ok(repository.findAllByPostTitleContainingIgnoreCase(
-                                                                   postTitle));
-    }
-
-    @GetMapping("/posts/{post}")
-    public ResponseEntity<List<Posts>> findByPost(@PathVariable String post){
-        return ResponseEntity.ok(repository.findAllByPostContainingIgnoreCase(
-                                                                        post));
-    }
-    
-    @PostMapping
-	public ResponseEntity<Posts> postPost(@RequestBody Posts post){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(
-                                                                        post));
+	@GetMapping
+	public ResponseEntity<List<Posts>> findAllPosts() {
+		return ResponseEntity.ok(repository.findAll());
 	}
-	
+
+	@GetMapping("/{id}")
+	public ResponseEntity<Posts> findPostById(@PathVariable int id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}
+
+	@GetMapping("/titles/{postTitle}")
+	public ResponseEntity<List<Posts>> findAllPostByTitle(@PathVariable String postTitle) {
+		return ResponseEntity.ok(repository.findAllByPostTitleContainingIgnoreCase(postTitle));
+	}
+
+	@GetMapping("/posts/{post}")
+	public ResponseEntity<List<Posts>> findByPost(@PathVariable String post) {
+		return ResponseEntity.ok(repository.findAllByPostContainingIgnoreCase(post));
+	}
+
+	@PostMapping
+	public ResponseEntity<Posts> postPost(@RequestBody Posts post) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(post));
+	}
+
 	@PutMapping
-	public ResponseEntity<Posts> putPost(@RequestBody Posts post){
+	public ResponseEntity<Posts> putPost(@RequestBody Posts post) {
 		return ResponseEntity.ok(repository.save(post));
 	}
-	
+
 	@DeleteMapping("/{id}")
-	public void deletePost(@PathVariable int id){
+	public void deletePost(@PathVariable int id) {
 		repository.deleteById(id);
 	}
 }
