@@ -1,61 +1,60 @@
 public class SalesMan extends Person{
-	private String
-	team,
-	shift;
-	
-	double
-	salesAmount,
-	commission;
+    private String
+        team,
+        shift;
 
-	public SalesMan(String name, String adress, String phoneNumber, String team,
-				  String shift, double salesAmount, double commission){
-		super(name, adress, phoneNumber);
-		this.team = team;
-		this.shift = shift;
-		this.salesAmount = salesAmount;
-		this.commission = commission;
-	}
+    double
+        salesAmount,
+        commission;
 
-	public void SalesManStatus(){
-		System.out.printf(
-			"Administrator status:\nName: %s.\nAdress: %s.\nPhone Number: %s.\nTeam: %s.\nShift: %s.\nSales amount: %.2f.\nCommission: %.2f", getName(), getAdress(), getPhoneNumber(), team, shift, salesAmount, commission
-		);
-	}
+    public SalesMan(String name, String adress, String phoneNumber, String team, String shift, double salesAmount, double commission){
+        super(name, adress, phoneNumber);
+        this.team = team;
+        this.shift = shift;
+        this.salesAmount = salesAmount;
+        this.commission = commission;
+    }
 
-	public double SalesCommission(){
-		double commissionPay = salesAmount * (commission/100);
-		return commissionPay;
-	}
+    public void SalesManStatus(){
+        System.out.printf(
+                "Administrator status:\nName: %s.\nAdress: %s.\nPhone Number: %s.\nTeam: %s.\nShift: %s.\nSales amount: %.2f.\nCommission: %.2f", getName(), getAdress(), getPhoneNumber(), team, shift, salesAmount, commission
+                );
+    }
 
-	public String getTeam(){
-		return team;
-	}
+    public double SalesCommission(){
+        double commissionPay = salesAmount * (commission/100);
+        return commissionPay;
+    }
 
-	public String getShift(){
-		return shift;
-	}
+    public String getTeam(){
+        return team;
+    }
 
-	public double getSalesAmount(){
-		return salesAmount;
-	}
+    public String getShift(){
+        return shift;
+    }
 
-	public double getCommission(){
-		return commission;
-	}
+    public double getSalesAmount(){
+        return salesAmount;
+    }
 
-	public void setTeam(String team){
-		this.team = team;
-	}
+    public double getCommission(){
+        return commission;
+    }
 
-	public void setShift(String shift){
-		this.shift = shift;
-	}
+    public void setTeam(String team){
+        this.team = team;
+    }
 
-	public void setSalesAmount(double salesAmount){
-		this.salesAmount = salesAmount;
-	}
+    public void setShift(String shift){
+        this.shift = shift;
+    }
 
-	public void setCommission(double commission){
-		this.commission = commission;
-	}
+    public void setSalesAmount(double salesAmount){
+        this.salesAmount = salesAmount;
+    }
+
+    public void setCommission(double commission){
+        this.commission = commission;
+    }
 }

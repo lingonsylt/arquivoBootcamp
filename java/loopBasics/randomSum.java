@@ -10,13 +10,13 @@ public class randomSum{
 
 		do
 		{
-			System.out.print("Digite um nÃºmero: ");
+			System.out.print("Digite um número: ");
 			num = s.nextInt();
 
 			sum+= num;
 		}
 		while(num != 0);
 
-		System.out.printf("A soma dos nÃºmeros digitados Ã©: %d.", sum);
+		System.out.printf("A soma dos números é %d.", sum);
 	}
 }

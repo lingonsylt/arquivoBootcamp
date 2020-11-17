@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class StorageApp{
     public static void main(String[] args){
-        ArrayList<String> items = new ArrayList();
-        ArrayList<String> update = new ArrayList();
+        ArrayList<Storage> items = new ArrayList();
+        ArrayList<Storage> update = new ArrayList();
         Scanner s = new Scanner(System.in);
 
         int
         option = 0,
         itemToRemove;
 
-        items.add(new String("raquete"));
-        items.add(new String("bola"));
-        items.add(new String("overgrip"));
-        items.add(new String("boné"));
-        items.add(new String("gatorade"));
-        items.add(new String("toalha"));
-        items.add(new String("camiseta"));
-        items.add(new String("corda"));
+        items.add(new Storage(1, 30f, "raquete"));
+        items.add(new Storage(2, 86f, "bola"));
+        items.add(new Storage(3, 46f, "overgrip"));
+        items.add(new Storage(4, 38f, "boné"));
+        items.add(new Storage(5, 41f, "gatorade"));
+        items.add(new Storage(6, 64f, "toalha"));
+        items.add(new Storage(7, 12f, "camiseta"));
+        items.add(new Storage(8, 109f, "corda"));
 
         do{
             System.out.println("Digite 1 para adicionar dados à lista.\nDigit"+
@@ -31,20 +31,16 @@ public class StorageApp{
         
             switch(option){
                 case 1:
-                    System.out.println("Digite nome do produto: ");
+                    System.out.println("Digite produto: ");
                     String updateItem = s.next();
-
-                    update.add(new String(updateItem));
-
+                    update.add(new Storage(updateItem));
                     items.addAll(update);
                     break;
 
                 case 2:
-                    System.out.println("Digitex o nome do item à se remover");
-                    String toRemove = s.next();
-                    if(items.contains(toRemove)){
-                        items.remove(toRemove);
-                    }
+                    System.out.print("Digite id  do item à se remover: ");
+                    String toRemove = s.nextInt();
+                    items.remove(toRemove - 1);
                     break;
 
                 case 3:
@@ -56,7 +52,6 @@ public class StorageApp{
                         items.remove(toReplace);
                         items.add(replacer);
                     }
-                    
                     break;
 
                 case 4:

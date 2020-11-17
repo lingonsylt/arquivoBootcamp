@@ -8,7 +8,9 @@ public class Storage{
     private String
     item;
 
-    public Storage(String item){
+    public Storage(int id, float price, String item){
+        this.id = id;
+        this.price = price;
         this.item = item;
     }
     
